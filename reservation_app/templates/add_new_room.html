@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include '/Users/yana/Documents/Django/Booking/reservation_app/templates/includes/header.html' %}
+
+
+<body>
+
+<!-- Nav -->
+{% include '/Users/yana/Documents/Django/Booking/reservation_app/templates/includes/nav.html' %}
+<!-- Nav -->
+
+<!-- Form -->
+<div class="card">
+  <div class="card-body">
+    <form action="" method="POST">
+      {% csrf_token %}
+      <div class="form-group">
+        <label for="room-name">Room name</label>
+        <input type="text" class="form-control" id="room-name" aria-describedby="room-name-help" placeholder="Nazwa sali" name="room-name">
+        <small id="room-name-help" class="form-text text-muted">Nazwa sali musi być unikatowa.</small>
+      </div>
+      <div class="form-group">
+        <label for="capacity">Capacity</label>
+        <input type="number" step="1" class="form-control" id="capacity" placeholder="10" name="capacity">
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" name="projector" id="projector">
+        <label class="form-check-label" for="projector">Projector</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Book room</button>
+    </form>
+  </div>
+</div>
+<!-- Form -->
+{% if error %}
+<!-- Form error -->
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  {{error}}
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<!-- Form error -->
+{% endif %}
+
+<!-- Footer -->
+{% include '/Users/yana/Documents/Django/Booking/reservation_app/templates/includes/footer.html' %}
+<!-- Footer -->
+</body>
+</html>

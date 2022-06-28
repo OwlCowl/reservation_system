@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc83a342-ed6b-460d-8ec9-204cc5af6130" name="Default Changelist" comment="" />
+    <list default="true" id="cc83a342-ed6b-460d-8ec9-204cc5af6130" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/reservation_app/templates/root.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Booking.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Booking.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/booking/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reservation_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/reservation_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reservation_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/reservation_app/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -17,6 +34,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
@@ -28,6 +46,34 @@
         <option name="myModuleName" value="Booking" />
       </console-settings>
     </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/reservation_app/templates/includes" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Django" type="PythonConfigurationType" factoryName="Python">
+      <module name="Booking" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/.local/share/virtualenvs/Booking-7Qi4Ygqz/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
+      <option name="PARAMETERS" value="runserver" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -47,6 +93,26 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
+    <state x="184" y="79" width="1071" height="730" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1656416101550">
+      <screen x="0" y="25" width="1440" height="791" />
+    </state>
+    <state x="184" y="79" width="1071" height="730" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.791@0.25.1440.791" timestamp="1656416101550" />
+    <state width="1419" height="235" key="GridCell.Tab.0.bottom" timestamp="1656423867981">
+      <screen x="0" y="25" width="1440" height="791" />
+    </state>
+    <state width="1419" height="235" key="GridCell.Tab.0.bottom/0.25.1440.791@0.25.1440.791" timestamp="1656423867981" />
+    <state width="1419" height="235" key="GridCell.Tab.0.center" timestamp="1656423867980">
+      <screen x="0" y="25" width="1440" height="791" />
+    </state>
+    <state width="1419" height="235" key="GridCell.Tab.0.center/0.25.1440.791@0.25.1440.791" timestamp="1656423867980" />
+    <state width="1419" height="235" key="GridCell.Tab.0.left" timestamp="1656423867979">
+      <screen x="0" y="25" width="1440" height="791" />
+    </state>
+    <state width="1419" height="235" key="GridCell.Tab.0.left/0.25.1440.791@0.25.1440.791" timestamp="1656423867979" />
+    <state width="1419" height="235" key="GridCell.Tab.0.right" timestamp="1656423867980">
+      <screen x="0" y="25" width="1440" height="791" />
+    </state>
+    <state width="1419" height="235" key="GridCell.Tab.0.right/0.25.1440.791@0.25.1440.791" timestamp="1656423867980" />
     <state x="84" y="50" key="SettingsEditor" timestamp="1656412876877">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
