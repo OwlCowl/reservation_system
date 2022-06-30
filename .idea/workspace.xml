@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc83a342-ed6b-460d-8ec9-204cc5af6130" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/reservation_app/templates/root.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Booking.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Booking.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/booking/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/booking/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservation_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/reservation_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reservation_app/templates/add_new_room.html" beforeDir="false" afterPath="$PROJECT_DIR$/reservation_app/templates/add_new_room.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reservation_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/reservation_app/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +30,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/reservation_app/templates" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -48,6 +42,10 @@
     </option>
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/reservation_app/templates" />
+      <recent name="$PROJECT_DIR$/reservation_app/templates/includes" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/reservation_app/templates/includes" />
     </key>
@@ -97,22 +95,62 @@
       <screen x="0" y="25" width="1440" height="791" />
     </state>
     <state x="184" y="79" width="1071" height="730" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.791@0.25.1440.791" timestamp="1656416101550" />
-    <state width="1419" height="235" key="GridCell.Tab.0.bottom" timestamp="1656423867981">
-      <screen x="0" y="25" width="1440" height="791" />
+    <state x="472" y="273" width="895" height="577" key="#xdebugger.evaluate" timestamp="1656512774688">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="472" y="273" width="895" height="577" key="#xdebugger.evaluate/0.0.1440.900@0.0.1440.900" timestamp="1656512774688" />
+    <state width="1419" height="304" key="GridCell.Tab.0.bottom" timestamp="1656513151184">
+      <screen x="0" y="25" width="1440" height="790" />
+    </state>
+    <state width="1419" height="304" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1656512684124" />
+    <state width="1419" height="304" key="GridCell.Tab.0.bottom/0.25.1440.790@0.25.1440.790" timestamp="1656513151184" />
     <state width="1419" height="235" key="GridCell.Tab.0.bottom/0.25.1440.791@0.25.1440.791" timestamp="1656423867981" />
-    <state width="1419" height="235" key="GridCell.Tab.0.center" timestamp="1656423867980">
-      <screen x="0" y="25" width="1440" height="791" />
+    <state width="1419" height="304" key="GridCell.Tab.0.center" timestamp="1656513151183">
+      <screen x="0" y="25" width="1440" height="790" />
     </state>
+    <state width="1419" height="304" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1656512684122" />
+    <state width="1419" height="304" key="GridCell.Tab.0.center/0.25.1440.790@0.25.1440.790" timestamp="1656513151183" />
     <state width="1419" height="235" key="GridCell.Tab.0.center/0.25.1440.791@0.25.1440.791" timestamp="1656423867980" />
-    <state width="1419" height="235" key="GridCell.Tab.0.left" timestamp="1656423867979">
-      <screen x="0" y="25" width="1440" height="791" />
+    <state width="1419" height="304" key="GridCell.Tab.0.left" timestamp="1656513151182">
+      <screen x="0" y="25" width="1440" height="790" />
     </state>
+    <state width="1419" height="304" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1656512684120" />
+    <state width="1419" height="304" key="GridCell.Tab.0.left/0.25.1440.790@0.25.1440.790" timestamp="1656513151182" />
     <state width="1419" height="235" key="GridCell.Tab.0.left/0.25.1440.791@0.25.1440.791" timestamp="1656423867979" />
-    <state width="1419" height="235" key="GridCell.Tab.0.right" timestamp="1656423867980">
-      <screen x="0" y="25" width="1440" height="791" />
+    <state width="1419" height="304" key="GridCell.Tab.0.right" timestamp="1656513151184">
+      <screen x="0" y="25" width="1440" height="790" />
     </state>
+    <state width="1419" height="304" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1656512684123" />
+    <state width="1419" height="304" key="GridCell.Tab.0.right/0.25.1440.790@0.25.1440.790" timestamp="1656513151184" />
     <state width="1419" height="235" key="GridCell.Tab.0.right/0.25.1440.791@0.25.1440.791" timestamp="1656423867980" />
+    <state width="1419" height="304" key="GridCell.Tab.1.bottom" timestamp="1656513151187">
+      <screen x="0" y="25" width="1440" height="790" />
+    </state>
+    <state width="1419" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1656512684022" />
+    <state width="1419" height="304" key="GridCell.Tab.1.bottom/0.25.1440.790@0.25.1440.790" timestamp="1656513151187" />
+    <state width="1419" height="304" key="GridCell.Tab.1.bottom/0.25.1440.794@0.25.1440.794" timestamp="1656512695296" />
+    <state width="1419" height="304" key="GridCell.Tab.1.bottom/0.25.1440.797@0.25.1440.797" timestamp="1656505857798" />
+    <state width="1419" height="304" key="GridCell.Tab.1.center" timestamp="1656513151186">
+      <screen x="0" y="25" width="1440" height="790" />
+    </state>
+    <state width="1419" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1656512684019" />
+    <state width="1419" height="304" key="GridCell.Tab.1.center/0.25.1440.790@0.25.1440.790" timestamp="1656513151186" />
+    <state width="1419" height="304" key="GridCell.Tab.1.center/0.25.1440.794@0.25.1440.794" timestamp="1656512695292" />
+    <state width="1419" height="304" key="GridCell.Tab.1.center/0.25.1440.797@0.25.1440.797" timestamp="1656505857782" />
+    <state width="1419" height="304" key="GridCell.Tab.1.left" timestamp="1656513151185">
+      <screen x="0" y="25" width="1440" height="790" />
+    </state>
+    <state width="1419" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1656512684018" />
+    <state width="1419" height="304" key="GridCell.Tab.1.left/0.25.1440.790@0.25.1440.790" timestamp="1656513151185" />
+    <state width="1419" height="304" key="GridCell.Tab.1.left/0.25.1440.794@0.25.1440.794" timestamp="1656512695291" />
+    <state width="1419" height="304" key="GridCell.Tab.1.left/0.25.1440.797@0.25.1440.797" timestamp="1656505857781" />
+    <state width="1419" height="304" key="GridCell.Tab.1.right" timestamp="1656513151187">
+      <screen x="0" y="25" width="1440" height="790" />
+    </state>
+    <state width="1419" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1656512684020" />
+    <state width="1419" height="304" key="GridCell.Tab.1.right/0.25.1440.790@0.25.1440.790" timestamp="1656513151187" />
+    <state width="1419" height="304" key="GridCell.Tab.1.right/0.25.1440.794@0.25.1440.794" timestamp="1656512695294" />
+    <state width="1419" height="304" key="GridCell.Tab.1.right/0.25.1440.797@0.25.1440.797" timestamp="1656505857792" />
     <state x="84" y="50" key="SettingsEditor" timestamp="1656412876877">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -125,5 +163,16 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="492" y="333" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1440.900@0.0.1440.900" timestamp="1656411527494" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/reservation_app/views.py</url>
+          <line>24</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

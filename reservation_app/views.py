@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from reservation_app.models import Room
+from .models import Room
 from django.views import View
 
 class startPage(View):
@@ -16,16 +16,25 @@ class addRoom(View):
         name_of_room = request.POST.get('room-name')
         capacity = request.POST.get('capacity')
         capacity = int(capacity) if capacity else 0
-        projector_accessibility = request.POST.get('projector') == 0
+        projector_accessibility = request.POST.get('projector') == "on"
 
-        if len(name_of_room) !=0\
-                and not Room.objects.filter(name=name_of_room).first() and capacity > 0:
+        if not name_of_room:
+            return render(request, "add_new_room.html", context={"error": "Please provide correct name of room"})
+        if capacity < 1:
+            return render(request, "add_new_room.html", context={"error": "Wrong capacity"})
+        if Room.objects.filter(name=name_of_room).first():
+            return render(request, "add_new_room.html", context={"error": "This room is already exist"})
+        try:
+            Room.objects.get(name=name_of_room)
+        except Room.DoesNotExist:
             Room.objects.create(name=name_of_room,
                                   capacity=capacity,
                                   projector=projector_accessibility)
-            return redirect("start")
-        else:
-            raise Exception("You data is incorrect")
+
+        return redirect('start')
+
+
+
 
 
 
