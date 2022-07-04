@@ -1,2 +1,8 @@
 # reservation_system
-Project to reserve conference room. Practising Django skills + Pyhton
+Project to reserve conference room.
+
+Tech stack:
+Django
+Python
+HTML
+Bootstrap
