@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="cc83a342-ed6b-460d-8ec9-204cc5af6130" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/booking/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reservation_app/templates/add_new_room.html" beforeDir="false" afterPath="$PROJECT_DIR$/reservation_app/templates/add_new_room.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reservation_app/templates/includes/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/reservation_app/templates/includes/nav.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reservation_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/reservation_app/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,11 +44,12 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/reservation_app/templates" />
       <recent name="$PROJECT_DIR$/reservation_app/templates/includes" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/reservation_app/templates" />
       <recent name="$PROJECT_DIR$/reservation_app/templates/includes" />
     </key>
   </component>
@@ -99,28 +102,28 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="472" y="273" width="895" height="577" key="#xdebugger.evaluate/0.0.1440.900@0.0.1440.900" timestamp="1656512774688" />
-    <state width="1419" height="304" key="GridCell.Tab.0.bottom" timestamp="1656513151184">
-      <screen x="0" y="25" width="1440" height="790" />
+    <state width="1419" height="104" key="GridCell.Tab.0.bottom" timestamp="1656937574302">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="304" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1656512684124" />
+    <state width="1419" height="104" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1656937574302" />
     <state width="1419" height="304" key="GridCell.Tab.0.bottom/0.25.1440.790@0.25.1440.790" timestamp="1656513151184" />
     <state width="1419" height="235" key="GridCell.Tab.0.bottom/0.25.1440.791@0.25.1440.791" timestamp="1656423867981" />
-    <state width="1419" height="304" key="GridCell.Tab.0.center" timestamp="1656513151183">
-      <screen x="0" y="25" width="1440" height="790" />
+    <state width="1419" height="104" key="GridCell.Tab.0.center" timestamp="1656937574300">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="304" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1656512684122" />
+    <state width="1419" height="104" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1656937574300" />
     <state width="1419" height="304" key="GridCell.Tab.0.center/0.25.1440.790@0.25.1440.790" timestamp="1656513151183" />
     <state width="1419" height="235" key="GridCell.Tab.0.center/0.25.1440.791@0.25.1440.791" timestamp="1656423867980" />
-    <state width="1419" height="304" key="GridCell.Tab.0.left" timestamp="1656513151182">
-      <screen x="0" y="25" width="1440" height="790" />
+    <state width="1419" height="104" key="GridCell.Tab.0.left" timestamp="1656937574299">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="304" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1656512684120" />
+    <state width="1419" height="104" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1656937574299" />
     <state width="1419" height="304" key="GridCell.Tab.0.left/0.25.1440.790@0.25.1440.790" timestamp="1656513151182" />
     <state width="1419" height="235" key="GridCell.Tab.0.left/0.25.1440.791@0.25.1440.791" timestamp="1656423867979" />
-    <state width="1419" height="304" key="GridCell.Tab.0.right" timestamp="1656513151184">
-      <screen x="0" y="25" width="1440" height="790" />
+    <state width="1419" height="104" key="GridCell.Tab.0.right" timestamp="1656937574301">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="304" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1656512684123" />
+    <state width="1419" height="104" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1656937574301" />
     <state width="1419" height="304" key="GridCell.Tab.0.right/0.25.1440.790@0.25.1440.790" timestamp="1656513151184" />
     <state width="1419" height="235" key="GridCell.Tab.0.right/0.25.1440.791@0.25.1440.791" timestamp="1656423867980" />
     <state width="1419" height="304" key="GridCell.Tab.1.bottom" timestamp="1656513151187">
@@ -163,16 +166,5 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="492" y="333" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1440.900@0.0.1440.900" timestamp="1656411527494" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/reservation_app/views.py</url>
-          <line>24</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

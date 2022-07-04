@@ -1,0 +1,29 @@
+
+<div class="col-md-8">
+
+    <hr>
+    <table class="table table-bordered text-center">
+        <tr class="table-heading">
+            <th>SL</th>
+            <th>Title</th>
+            <th>Image</th>
+            <th>Status</th>
+            <th>Time</th>
+            <th>Actions</th>
+        </tr>
+        {% for todo in todos %}
+        <tr>
+            <td>{{ forloop.counter }}</td>
+            <td>{{ todo.title }}</td>
+            <td><img src="" alt=""></td>
+            <td>{{ todo.status }}</td>
+            <td>{{ todo.created_at }}</td>
+            <td>
+                <a href="{% url 'crud.view' todo.id %}" class="btn btn-sm btn-success">View</a>
+                <a href="{% url 'crud.edit' todo.id %}"  class="btn btn-sm btn-info">Edit</a>
+                <a href="{% url 'crud.delete' todo.id %}" class="btn btn-sm btn-danger">Delete</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
