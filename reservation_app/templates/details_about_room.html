@@ -20,36 +20,36 @@
             <table class="table table-bordered table-hover">
                 <thead class="thead-light">
                 <tr class="table-heading">
-                    <th>Room id</th>
                     <th>Room name</th>
                     <th>Capacity</th>
                     <th>Projector</th>
-                    <th>Status</th>
+                    <th>Reservations</th>
                     <th>Actions</th>
                 </tr>
-                {% for room in rooms %}
+
                 <tr>
-                    <td>{{ forloop.counter }}</td>
                     <td>{{ room.name }}</td>
                     <td>{{ room.capacity }}</td>
                     <td>{{ room.projector }}</td>
+                    <td>
 
-                    {% if room.reserved %}
-                        <td class="col-2" style="color:red;">Booked</td>
-                      {% else %}
-                        <td class="col-2" style="color:green;">Free</td>
-                    {% endif %}
+                        {% for reservation in reservation %}
+                        <li class="list-group-item">
+                          {{ reservation.date }}
+                          <p>Comment: {{ reservation.comment }}
+                        </li>
+                        {% endfor %}
 
 
+                    </td>
                     <td>
                         <a href="/room/reserve/{{room.id}}/" class="btn btn-sm btn-success">Book</a>
                         <a href="/room/modify/{{room.id}}/" class="btn btn-sm btn-info">Edit</a>
                         <a href="/room/delete/{{room.id}}/" class="btn btn-sm btn-danger">Delete</a>
-                        <a href="/room/{{room.id}}/" class="btn btn-sm btn-info">Details</a>
                     </td>
                 </tr>
 
-                {% endfor %}
+
                 </thead>
             </table>
 

@@ -37,7 +37,9 @@ class addRoom(View):
 class roomCollection(View):
     def get(self, request):
         allRooms = Room.objects.all()
-        if allRooms:
+        for room in allRooms:
+            reservation_dates = [reservation.date for reservation in room.reservation_set.all()]
+            room.reserved = datetime.date.today() in reservation_dates
             return render(request, 'all_rooms_list.html', context={'rooms':allRooms})
         else:
             return render(request, 'all_rooms_list.html', context={'error': "There is no rooms"})
@@ -45,7 +47,8 @@ class roomCollection(View):
 class roomBook(View):
     def get(self, request, room_id):
         room = Room.objects.get(id=room_id)
-        return render(request, 'book_the_room.html', context = {"room": room})
+        allReservations = Reservation.objects.filter(room_id=room)
+        return render(request, 'book_the_room.html', context = {"room": room, 'reservations':allReservations})
 
     def post(self, request, room_id):
         room = Room.objects.get(id=room_id)
@@ -98,7 +101,10 @@ class roomDelete(View):
         return redirect("rooms")
 
 class roomInfo(View):
-    pass
+    def get(self, request, room_id):
+        roomId = Room.objects.get(id=room_id)
+        reservation = roomId.reservation_set.filter(date__gte=str(datetime.date.today())).order_by('date')
+        return render(request, 'details_about_room.html', context={'room':roomId, 'reservation':reservation})
 
 
 

@@ -27,6 +27,25 @@
     </form>
   </div>
 </div>
+
+
+<div class="card">
+  <div class="card-body">
+    <h5>Reservations</h5>
+    <ul class="list-group">
+      {% for reservation in reservations %}
+      <li class="list-group-item">
+        <h6>{{ reservation.date }}</h6>
+        <p>{{ reservation.comment }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+
+
+
 <!-- Form -->
 {% if error %}
 <!-- Form error -->
