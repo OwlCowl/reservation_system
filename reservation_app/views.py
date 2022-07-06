@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
-from .models import Room
+from .models import Room, Reservation
 from django.views import View
+import datetime
 
 class startPage(View):
     def get(self, request):
@@ -42,7 +43,24 @@ class roomCollection(View):
             return render(request, 'all_rooms_list.html', context={'error': "There is no rooms"})
 
 class roomBook(View):
-    pass
+    def get(self, request, room_id):
+        room = Room.objects.get(id=room_id)
+        return render(request, 'book_the_room.html', context = {"room": room})
+
+    def post(self, request, room_id):
+        room = Room.objects.get(id=room_id)
+        comment = request.POST.get('comment')
+
+        date = request.POST.get('date')
+        if Reservation.objects.filter(room_id=room, date=date):
+            return render(request, 'book_the_room.html', context = {"room": room, 'error': "The room is already reserved"})
+        if date < str(datetime.date.today()):
+            return render(request, 'book_the_room.html', context={"room": room, "error": "There is a wrong date!"})
+
+        Reservation.objects.create(room_id=room, date=date, comment=comment)
+        return redirect("rooms")
+
+
 
 class roomEdit(View):
     def get(self, request, room_id):
@@ -69,10 +87,7 @@ class roomEdit(View):
 
         Room.objects.filter(pk=room_id).update(name=roomNewName, capacity=roomCapacity,
                                                            projector=roomProjector)
-        # roomToEdit.name = roomNewName
-        # roomToEdit.capacity = roomCapacity
-        # roomToEdit.projector_availability = roomProjector
-        # roomToEdit.save()
+
         return redirect("rooms")
 
 

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include '/Users/yana/Documents/Django/Booking/reservation_app/templates/includes/header.html' %}
+
+
+<body>
+
+<!-- Nav -->
+{% include '/Users/yana/Documents/Django/Booking/reservation_app/templates/includes/nav.html' %}
+<!-- Nav -->
+
+<!-- Form -->
+<div class="card">
+  <div class="card-body">
+      <h2>Room name: {{ room.name }}</h2>
+    <form action="" method="POST">
+      {% csrf_token %}
+      <div class="form-group">
+        <label for="comment">Comment</label>
+          <textarea class="form-control" id="comment" placeholder="Leave here your comment about booking" name="comment"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="date">Date</label>
+        <input type="date" class="form-control" id="date" placeholder="date" name="date">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</div>
+<!-- Form -->
+{% if error %}
+<!-- Form error -->
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  {{error}}
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<!-- Form error -->
+{% endif %}
+
+<!-- Footer -->
+{% include '/Users/yana/Documents/Django/Booking/reservation_app/templates/includes/footer.html' %}
+<!-- Footer -->
+</body>
+</html>

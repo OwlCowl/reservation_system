@@ -23,7 +23,6 @@
                     <th>Room id</th>
                     <th>Room name</th>
                     <th>Capacity</th>
-                    <th>State</th>
                     <th>Projector</th>
                     <th>Actions</th>
                 </tr>
@@ -32,7 +31,6 @@
                     <td>{{ forloop.counter }}</td>
                     <td>{{ room.name }}</td>
                     <td>{{ room.capacity }}</td>
-                    <td>{{ room.status }}</td>
                     <td>{{ room.projector }}</td>
                     <td>
                         <a href="/room/reserve/{{room.id}}/" class="btn btn-sm btn-success">Book</a>
