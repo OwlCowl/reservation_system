@@ -9,6 +9,59 @@
 {% include '/Users/yana/Documents/Django/Booking/reservation_app/templates/includes/nav.html' %}
 <!-- Nav -->
 
+<!--form for looking room -->
+
+    <div class="row mb-5">
+        <div class="col-lg-8 mx-auto">
+          <h5 class="font-weight-light mb-4 font-italic text-white">Custom rounded search bars with input group</h5>
+          <div class="bg-white p-5 rounded shadow">
+            <form method="POST">
+            {% csrf_token %}
+            <!-- Custom rounded search bars with input group -->
+              <div class="p-1 bg-light rounded rounded-pill shadow-sm mb-4">
+
+                  <input id="lk_name" name='lk_name' type="search" placeholder="What's the name of room you are searching for?" aria-describedby="button-addon1" class="form-control border-0 bg-light">
+
+              </div>
+              <div class="p-1 bg-light rounded rounded-pill shadow-sm mb-4">
+
+                  <input id="lk_capacity" name='lk_capacity' type="search" placeholder="What's the minimum of capacity of room?" aria-describedby="button-addon2" class="form-control border-0 bg-light">
+
+              </div>
+
+              <div class="form-check">
+                  <input type="checkbox" class="form-check-input" name="projector" id="projector">
+                  <label class="form-check-label" for="projector">Projector</label>
+              </div>
+
+
+                <div class="input-group-append border-0">
+                  <button id="submit-button" type="submit" class="btn btn-primary btn-lg" ><i class="fa fa-search"></i></button>
+                </div>
+
+            <!-- End -->
+
+          </div>
+        </div>
+      </div>
+
+
+
+</form>
+<!--form for looking room -->
+
+{% if error %}
+<!-- Form error -->
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  {{error}}
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<!-- Form error -->
+{% endif %}
+
+
 
 
 <!-- Footer -->

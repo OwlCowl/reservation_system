@@ -1,11 +1,25 @@
+from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from .models import Room, Reservation
 from django.views import View
 import datetime
 
 class startPage(View):
+    #add here look for new room forrm
     def get(self, request):
         return render(request, 'root.html')
+
+    def post(self, request):
+        name = request.POST.get("lk_name")
+        capacity = request.POST.get("lk_capacity")
+        projector = request.POST.get("projector") == "on"
+
+        rooms = Room.objects.filter(name__contains=name, capacity__gte=capacity, projector=projector)
+
+        if rooms:
+            return render(request, 'all_rooms_list.html', context={"rooms": rooms})
+        else:
+            return render(request, 'all_rooms_list.html', {"error": "Such room doesn't exist"})
 
 
 class addRoom(View):
